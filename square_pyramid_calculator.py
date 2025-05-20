@@ -9,10 +9,12 @@
 MIN_VAL = 0.0
 MAX_VAL = 1000.0
 
+
 # Function with default parameters for demo
 def calculate_volume(base=5.0, height=10.0):
     volume = (1 / 3) * base * base * height
     return volume
+
 
 # Ask how many times to run the calculation
 while True:
@@ -56,5 +58,6 @@ for i in range(tries):
                     print(
                         "Error: Base and height must be greater than 0 and less than or equal to 1000."
                     )
+                    
         except ValueError:  # Try catch output for non numeric input
             print("Invalid input. Please enter numeric values only.")
