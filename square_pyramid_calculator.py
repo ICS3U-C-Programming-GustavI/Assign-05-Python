@@ -58,5 +58,6 @@ for i in range(tries):
                     print(
                         "Error: Base and height must be greater than 0 and less than or equal to 1000."
                     )
+                    
         except ValueError:  # Try catch output for non numeric input
             print("Invalid input. Please enter numeric values only.")
